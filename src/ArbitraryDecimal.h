@@ -36,11 +36,16 @@ public:
     ArbitraryDecimal(double);
 
     // Arithmetic operations
-    ArbitraryDecimal add (ArbitraryDecimal other);
+    ArbitraryDecimal add      (ArbitraryDecimal other);
+    ArbitraryDecimal operator+(ArbitraryDecimal other);
     ArbitraryDecimal subtract (ArbitraryDecimal other);
+    ArbitraryDecimal operator-(ArbitraryDecimal other);
     ArbitraryDecimal multiply (ArbitraryDecimal other);
-    ArbitraryDecimal divide (ArbitraryDecimal other);
-    ArbitraryDecimal pow (ArbitraryDecimal other);
+    ArbitraryDecimal operator*(ArbitraryDecimal other);
+    ArbitraryDecimal divide   (ArbitraryDecimal other);
+    ArbitraryDecimal operator/(ArbitraryDecimal other);
+    ArbitraryDecimal pow      (ArbitraryDecimal other);
+    ArbitraryDecimal operator^(ArbitraryDecimal other);
 
     // Conversions
     int const asInt();
